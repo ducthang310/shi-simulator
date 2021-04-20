@@ -1,0 +1,27 @@
+<div class="container">
+  <h4 class="pt-3 mb-1">Pusher Connection</h4>
+
+  <p>
+    State:
+    <span [class.text-gray]="pusherSubscriptionState === 'connecting'"
+          [class.txt-red]="pusherSubscriptionState === 'error'"
+          [class.txt-primary]="pusherSubscriptionState === 'succeeded'"
+    >{{pusherSubscriptionState}}</span>
+  </p>
+
+  <h4 class="pt-3 mb-1">Event list: </h4>
+  <p class="text-muted">Update an order to see the notifications</p>
+
+  <ul class="list-group mt-3 mb-3">
+    <li class="list-group-item d-flex justify-content-between lh-sm mb-1" *ngFor="let order of orders">
+      <div>
+        <h6 class="my-0">Order {{order.id}} - {{order.code}}</h6>
+        <div class="mt-1">
+          <span class="text-gray mr-1">Status:</span>
+          <b class="text-uppercase badge" [ngClass]="'status-' + order.status">{{order.status}}</b>
+        </div>
+      </div>
+      <span class="text-muted">{{order.time}}</span>
+    </li>
+  </ul>
+</div>

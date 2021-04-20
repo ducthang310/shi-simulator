@@ -1,0 +1,11 @@
+.box {
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 15%);
+  background-color: #fff;
+
+  &--hover {
+    &:hover {
+      box-shadow: 1px 1px 3px 0 rgb(0 0 0 / 25%);
+    }
+  }
+}

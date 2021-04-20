@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  name: 'dev',
+  baseApiUrl: 'http://localhost:3000',
+  pusher: {
+    key: 'insert_key_here',
+    cluster: 'insert_cluster_here'
+  },
 };
 
 /*

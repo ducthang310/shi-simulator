@@ -1,0 +1,19 @@
+.status-pending {
+  background-color: #64d667;
+  color: #ffffff;
+}
+
+.status-processing {
+  background-color: #2190E9;
+  color: #ffffff;
+}
+
+.status-complete {
+  background-color: $primary-color;
+  color: #ffffff;
+}
+
+.status-cancelled {
+  background-color: #888888;
+  color: #ffffff;
+}
