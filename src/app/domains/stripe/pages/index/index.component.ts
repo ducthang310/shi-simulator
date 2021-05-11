@@ -11,6 +11,10 @@ export class IndexComponent implements OnInit, OnDestroy {
   ) {
   }
 
+  createToken(): void {
+    //
+  }
+
   ngOnInit(): void {
   }
 

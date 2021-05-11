@@ -5,7 +5,12 @@
     Generate a token for creating a payment method
   </p>
 
-  <form>
-    <p>Stripe card elements are here</p>
-  </form>
+  <div class="mb-3 mt-3">
+    <label for="i-card" class="form-label">Input a card</label>
+    <div class="form-control" id="i-card"></div>
+  </div>
+
+  <button type="button" class="btn btn-primary" (click)="createToken()">Create token</button>
+
+  <div class="p-3 border bg-light mt-3" id="s-token">Token will be here...</div>
 </div>
